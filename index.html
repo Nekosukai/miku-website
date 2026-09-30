@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+
+<html lang="ja">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="初音ミクをテーマにした未来主義アーティストサイト">
+    <title>HATSUNE MIKU | DIGITAL SINGER</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800&family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  
+  <body>
+    <div class="loader" id="loader" aria-hidden="true">
+      <div class="loader__inner">
+        <span class="loader__label">SYSTEM INITIALIZE</span>
+        <div class="loader__bar"><span></span></div>
+        <span class="loader__percent">00%</span>
+      </div>
+    </div>
+
+    <div class="cursor-glow" id="cursorGlow"></div>
+    <div class="noise"></div>
+    <div class="grid-overlay"></div>
+
+    <header class="site-header" id="siteHeader">
+      <a class="logo" href="index.html" aria-label="HATSUNE MIKU ホーム">
+        <span>H</span>ATSUNE MIKU
+        <small>VIRTUAL SINGER / 01</small>
+      </a>
+      <button class="menu-toggle" id="menuToggle" aria-label="メニューを開く" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="global-nav" id="globalNav">
+        <a class="is-active" href="index.html">HOME</a>
+        <a href="profile.html">PROFILE</a>
+        <a href="music.html">MUSIC</a>
+        <a href="concerts.html">CONCERTS</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" id="hero">
+        <div class="hero__image" data-parallax="-0.06"></div>
+        <div class="hero__scan"></div>
+        <div class="hero__content">
+          <p class="eyebrow glitch" data-text="VIRTUAL SINGER / DIGITAL ICON">PW11A124_15_呉剛毅</p>
+          <h1 class="hero__title">HATSUNE<br><span>MIKU</span></h1>
+          <p class="hero__lead">声から生まれた、世界とつながるデジタル・シンガー。</p>
+          <a class="neon-button" href="profile.html"><span>EXPLORE MIKU</span><i>↗</i></a>
+        </div>
+        <div class="hero__side">01 / 04</div>
+        <div class="hero__bottom">
+          <span>SCROLL TO EXPLORE</span>
+          <span class="scroll-line"></span>
+        </div>
+      </section>
+
+      <section class="section intro-section reveal">
+        <div class="section-tag">01 — DIGITAL IDENTITY</div>
+        <div class="intro-grid">
+          <h2>世界中の創作を、<br><span>音楽でつなぐ。</span></h2>
+          <p>初音ミクは、クリエイターの想いを歌声に変え、楽曲・映像・イラスト・ライブへと広がってきたバーチャル・シンガーです。このサイトでは、その世界観を未来的なデジタル空間として表現します。</p>
+        </div>
+      </section>
+
+      <section class="section feature-section">
+        <div class="section-heading reveal">
+          <div>
+            <span class="section-tag">02 — LATEST SOUND</span>
+            <h2>FEATURED<br><span>TRACKS</span></h2>
+          </div>
+          <a class="text-link" href="music.html">MUSIC INDEX ↗</a>
+        </div>
+
+        <div class="music-grid">
+          <article class="music-card reveal" data-tilt>
+            <div class="music-card__number">01</div>
+            <div class="music-card__visual">
+              <img src="images/tell-your-world.jpg" alt="Tell Your World ジャケット">
+            </div>
+            <div class="music-card__body">
+              <span>livetune feat. 初音ミク</span>
+              <h3>Tell Your World</h3>
+              <p>広がり続ける創作とつながりをテーマにした代表曲。</p>
+              <a href="music.html#tell-your-world">DETAIL ↗</a>
+            </div>
+          </article>
+          <article class="music-card reveal" data-tilt>
+            <div class="music-card__number">02</div>
+            <div class="music-card__visual"> 
+              <img src="images/world-is-mine.jpg" alt="ワールドイズマイン ジャケット">
+            </div>
+            <div class="music-card__body">
+              <span>ryo (supercell) feat. 初音ミク</span>
+              <h3>ワールドイズマイン</h3>
+              <p>初音ミクを象徴する楽曲のひとつとして愛され続ける一曲。</p>
+              <a href="music.html#world-is-mine">DETAIL ↗</a>
+            </div>
+          </article>
+
+          <article class="music-card reveal" data-tilt>
+            <div class="music-card__number">03</div>
+            <div class="music-card__visual">
+              <img src="images/vampire.jpg" alt="ヴァンパイア ジャケット">
+            </div>
+            <div class="music-card__body">
+              <span>DECO*27 feat. 初音ミク</span>
+              <h3>ヴァンパイア</h3>
+              <p>強いビートと印象的な映像表現で人気を集めた楽曲。</p>
+              <a href="music.html#vampire">DETAIL ↗</a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section portal-section reveal">
+        <div class="portal">
+          <div class="portal__ring"></div>
+          <div class="portal__content">
+            <span class="section-tag">03 — LIVE EXPERIENCE</span>
+            <h2>THE STAGE<br><span>IS CONNECTED.</span></h2>
+            <p>3DCGライブ、企画展、世界ツアー。画面の向こう側から、リアルなステージへ。</p>
+            <a class="neon-button neon-button--light" href="concerts.html"><span>VIEW CONCERTS</span><i>↗</i></a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div>
+        <strong>HATSUNE MIKU</strong>
+        <span>VIRTUAL SINGER / DIGITAL ICON</span>
+      </div>
+      <div class="footer-links">
+        <a href="profile.html">PROFILE</a>
+        <a href="music.html">MUSIC</a>
+        <a href="concerts.html">CONCERTS</a>
+      </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
